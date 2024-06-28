@@ -7,16 +7,20 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Create Newsletter</h1>
-    <form action="{{ route('admin.newsletters.store') }}" method="POST">
-        @csrf
-        <label for="title">Title:</label>
-        <input type="text" name="title" id="title" required>
-        <br>
-        <label for="content">Content:</label>
-        <textarea name="content" id="content" required></textarea>
-        <br>
-        <button type="submit">Create</button>
-    </form>
+    <div class="container mt-5">
+        <h1>Create Newsletter</h1>
+        <form action="{{ route('admin.newsletters.store') }}" method="POST">
+            @csrf
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" class="form-control" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="content">Content:</label>
+                <textarea class="form-control" id="content" name="content" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Newsletter</button>
+        </form>
+    </div>
 </body>
 </html>
