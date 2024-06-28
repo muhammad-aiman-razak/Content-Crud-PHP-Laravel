@@ -9,6 +9,7 @@
 <body>
     <div class="container mt-5">
         <h1>Edit Newsletter</h1>
+        <br>
         <form action="{{ route('admin.newsletters.update', $newsletter->id) }}" method="POST">
             @csrf
             @method('PUT')

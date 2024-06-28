@@ -9,6 +9,7 @@
 <body>
     <div class="container mt-5">
         <h1>Create Newsletter</h1>
+        <br>
         <form action="{{ route('admin.newsletters.store') }}" method="POST">
             @csrf
             <div class="form-group">

@@ -11,6 +11,7 @@
 <body>
     <div class="container mt-5">
         <h1>Newsletters</h1>
+        <br>
         <a href="{{ route('admin.newsletters.create') }}" class="btn btn-success mb-3">Create Newsletter</a>
         @foreach($newsletters as $newsletter)
             <div class="card mb-3">
